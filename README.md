@@ -51,8 +51,8 @@ Accuracy · Precision · Recall · F1-score · ROC curve · AUC · Confusion Mat
 
 ## Key Findings
 
-- **Best model:** SVM (RBF kernel) tuned with **Random Search** — best on all three metrics. Its curved decision boundary fits the non-linear relationship between wine chemistry and quality.
-- **SVM (Random Search) vs SVM (Grid Search):** Random Search found slightly better parameters (values *between* the grid points) and ran faster (12.5s vs 18.2s).
+- **Best model:** SVM (RBF kernel) tuned with **RandomSearch** — best on all three metrics. Its curved decision boundary fits the non-linear relationship between wine chemistry and quality.
+- **SVM (RandomSearch) vs SVM (GridSearch):** Random Search found slightly better parameters (values *between* the grid points) and ran faster (12.5s vs 18.2s).
 - **Overfitting trade-off:** the best (RandomSearch) SVM is more accurate but overfits (train 0.989 / test 0.802, gap 0.187), while min_samples_leaf=50 made the Decision Tree generalize cleanly (gap 0.019).
 - **Most predictive feature:** `alcohol` — the Decision Tree's root split, confirming the Part 1 correlation analysis.
 
